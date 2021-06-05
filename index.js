@@ -6,11 +6,8 @@ function welcome(){
   console.log(chalk.green("Hii! Whats your name? "))
   var userName=chalk.green(readlineSync.question());
   console.log(chalk.green("Welcome "+userName +" Lets start the quiz:"));
-//    console.log(chalk.green("Instructions:"));
-//    console.log(chalk.green("1.you will have two lives."));
-//    console.log(chalk.green("2.For answering the next level you have to score the required point."));
-//    console.log(chalk.green("So are you ready for the quiz? Lets start:"));
 }
+
   // array of objects
   var questions=[{
     question:"What is my full name? ",
@@ -62,11 +59,18 @@ function welcome(){
        play(currentQuestion.question,currentQuestion.answer);
      }
    }
-   function final_score(){
-     console.log("Congratulation you scored: "+score);
+   function highest_score() {
+     console.log("shivasha : 6");
+     console.log("shivam   : 5");
    }
+   function final_score() {
+       console.log("YAY! you scored: "+score);
+       console.log("Check out the high scores,if you shoud be there ping me and I'll update it.");
+     }
+   
 
 welcome();
 game();
 final_score();
+highest_score();
 
